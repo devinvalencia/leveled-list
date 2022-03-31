@@ -1,5 +1,3 @@
-
-// import { isObjectEqual, isObjectValid } from './helpers.js'
 import { createHttpEffect } from '@servicenow/ui-effect-http'
 
 const actions = {
