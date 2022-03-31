@@ -2,7 +2,6 @@ import { createHttpEffect } from '@servicenow/ui-effect-http'
 
 const actions = {
   'DIS_RELATED_REQUESTED#JOIN': createHttpEffect('api/now/table/:table', {
-    // batch: false,
     method: 'GET',
     headers: {
       Accepts: 'application/json',
@@ -131,26 +130,6 @@ const actions = {
       })
     }
   }
-  // LEVELED_LIST_ACTION_CLICKED: ({ action, properties, updateState }) => {
-  //   if (properties.debugMode) {
-  //     console.debug('leveled list ACTION PAYLOAD', action.payload)
-  //   }
-  // },
-  // LEVELED_LIST_RELATED_ACTION_CLICKED: ({ action, properties, updateState }) => {
-  //   if (properties.debugMode) {
-  //     console.debug('leveled list RELATED ACTION PAYLOAD', action.payload)
-  //   }
-  // },
-  // LEVELED_LIST_DATA_REFRESH: ({ action, properties, updateState }) => {
-  //   if (properties.debugMode) {
-  //     console.debug('data refresh called')
-  //   }
-  // },
-  // LEVELED_LIST_ROW_CLICKED: ({ action, properties, updateState }) => {
-  //   if (properties.debugMode) {
-  //     console.debug('data refresh called')
-  //   }
-  // }
 }
 
 export { actions }
