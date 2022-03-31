@@ -1,0 +1,48 @@
+{
+	"name": "leveled-list",
+	"version": "1.0.11",
+	"private": false,
+	"description": "",
+	"keywords": [
+		"ServiceNow",
+		"Now Experience UI Component",
+		"leveled-list"
+	],
+	"readme": "./README.md",
+	"engines": {
+		"node": ">=8.6.0",
+		"npm": ">=5.3.0"
+	},
+	"module": "src/index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"dependencies": {
+		"@servicenow/cli-archetype": "20.0.0",
+		"@servicenow/cli-component-archetype": "20.0.0",
+		"@servicenow/library-translate": "rome",
+		"@servicenow/now-button": "^19.8.2-ecd",
+		"@servicenow/now-collapse": "^19.8.2-ecd",
+		"@servicenow/now-dropdown": "^19.8.2-ecd",
+		"@servicenow/now-heading": "^19.8.2-ecd",
+		"@servicenow/now-highlighted-value": "^19.8.2-ecd",
+		"@servicenow/now-icon": "^19.8.2-ecd",
+		"@servicenow/now-pagination-control": "^19.8.2-ecd",
+		"@servicenow/sass-kit": "rome",
+		"@servicenow/sass-theme": "rome",
+		"@servicenow/ui-core": "rome",
+		"@servicenow/ui-effect-http": "^19.4.2",
+		"@servicenow/ui-renderer-snabbdom": "rome"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.17.0",
+		"@babel/preset-env": "^7.16.11",
+		"@servicenow/cli-archetype-dev": "20.0.0",
+		"@servicenow/cli-component-archetype-dev": "20.0.0",
+		"babel-jest": "^27.5.0",
+		"jest": "^27.5.0",
+		"regenerator-runtime": "^0.13.9",
+		"sinon": "^13.0.1",
+		"standard": "^16.0.4"
+	}
+}

@@ -1,0 +1,77 @@
+@import '@servicenow/sass-kit/host';
+@import '@servicenow/sass-utility/index';
+@import './snow-include.css';
+
+
+a {
+    text-decoration: none !important
+}
+
+.main {
+    font-size: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.col-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leveled-control {
+    display: block ruby !important;
+    border-top: 0 !important;
+    justify-content: center;
+}
+
+.list-pointer {
+    cursor: pointer;
+}
+
+.event-link {
+    color: RGB(var(--now-color-secondary, 1, 119, 142)) !important;
+}
+
+.related-heading {
+    
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.related-heading-container {
+    background: #22223e !important;
+    color:#f9f9f9;
+}
+
+.related-body {
+    background: RGB(241,241,241)
+}
+
+.related-highlighted-count {
+    background: #636363;
+    padding: 1px 3px 1px 3px;
+}
+
+.selected-list-record {
+   -moz-box-shadow:    0 0 3px inset #7c7c7c;
+   -webkit-box-shadow: 0 0 3px inset #7c7c7c;
+   box-shadow:         0 0 3px inset #7c7c7c;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.b-0 {
+    border: 0px !important;
+    opacity: 0;
+}
+
+.m-y-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.m-5 {
+    margin: 5px !important;
+}

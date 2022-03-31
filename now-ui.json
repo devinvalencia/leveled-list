@@ -1,0 +1,148 @@
+{
+	"components": {
+		"discover-leveled-list": {
+			"actions": [
+				{
+					"name": "LEVELED_LIST_ACTION_CLICKED",
+					"description": "An action item on the leveled list component was clicked"
+				},
+				{
+					"name": "LEVELED_LIST_RELATED_ACTION_CLICKED",
+					"description": "A related action item on the leveled list component was clicked"
+				},
+				{
+					"name": "LEVELED_LIST_DATA_REFRESH",
+					"description": "A request to refresh the leveled list data source was dispatched"
+				},
+				{
+					"name": "LEVELED_LIST_ROW_CLICKED",
+					"description": "An action dispatched when a leveled list row record is clicked"
+				}
+			],
+			"innerComponents": [
+				"now-highlighted-value",
+				"now-heading",
+				"now-icon",
+				"now-button",
+				"now-dropdown",
+				"now-pagination-control"
+			],
+			"uiBuilder": {
+				"associatedTypes": [
+					"global.core",
+					"global.landing-page"
+				],
+				"label": "Leveled List",
+				"icon": "document-outline",
+				"description": "A leveled list component displaying parent-child relationships.",
+				"category": "primitives"
+			},
+			"properties": [
+				{
+					"name": "debugMode",
+					"label": "Debug Mode",
+					"description": "Boolean to display debug bar",
+					"readOnly": false,
+					"fieldType": "boolean",
+					"required": false
+				},
+				{
+					"name": "data",
+					"label": "Data",
+					"description": "Parent table data for the component",
+					"readOnly": false,
+					"required": false
+				},
+				{
+					"name": "table",
+					"label": "Primary Table Name",
+					"description": "The name of the primary table (the name of the table connected to data property)",
+					"readOnly": false,
+					"required": false,
+					"fieldType": "table_name",
+					"valueType": "string"
+				},
+				{
+					"name": "fields",
+					"label": "Fields",
+					"description": "Fields to display from data",
+					"readOnly": false,
+					"required": false,
+					"defaultValue": ""
+				},
+				{
+					"name": "actionItems",
+					"label": "Action Items",
+					"description": "Primary data table actions defined in json",
+					"readOnly": false,
+					"required": false,
+					"fieldType": "json",
+					"defaultValue": "[]"
+				},
+				{
+					"name": "relatedTable",
+					"label": "Related Table Name",
+					"description": "The name of the related table",
+					"readOnly": false,
+					"required": false,
+					"fieldType": "table_name",
+					"valueType": "string"
+				},
+				{
+					"name": "relatedJoinTable",
+					"label": "Related Join Table Name",
+					"description": "The name of the related join table",
+					"readOnly": false,
+					"required": false,
+					"fieldType": "table_name",
+					"valueType": "string"
+				},
+				{
+					"name": "relatedTableTitle",
+					"label": "Related Table Title",
+					"description": "The value to display in the related list header defaults to related child key",
+					"readOnly": false,
+					"required": false,
+					"fieldType": "string",
+					"valueType": "string"
+				},
+				{
+					"name": "relatedParentKey",
+					"label": "Related Join Parent Key",
+					"description": "The parent key of the related join table",
+					"readOnly": false,
+					"required": false,
+					"fieldType": "string",
+					"valueType": "string"
+				},
+				{
+					"name": "relatedChildKey",
+					"label": "Related Join Child Key",
+					"description": "The child key of the related join table",
+					"readOnly": false,
+					"required": false,
+					"fieldType": "string",
+					"valueType": "string"
+				},
+				{
+					"name": "relatedFields",
+					"label": "Related Fields",
+					"description": "Related data fields to display",
+					"readOnly": false,
+					"required": false,
+					"defaultValue": ""
+				},
+				{
+					"name": "relatedActionItems",
+					"label": "Related Action Items",
+					"description": "Related table actions defined in json",
+					"readOnly": false,
+					"required": false,
+					"fieldType": "json",
+					"defaultValue": "[]"
+				}
+			]
+		}
+	},
+	"scopeName": "x_difs_leveled_lis"
+}
