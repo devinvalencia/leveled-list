@@ -1,6 +1,6 @@
 {
 	"components": {
-		"discover-leveled-list": {
+		"x-772283-discover-leveled-list": {
 			"actions": [
 				{
 					"name": "LEVELED_LIST_ACTION_CLICKED",
@@ -144,5 +144,5 @@
 			]
 		}
 	},
-	"scopeName": "x_difs_leveled_lis"
+	"scopeName": "x_772283_discov"
 }

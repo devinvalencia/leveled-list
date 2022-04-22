@@ -4,7 +4,7 @@ import { actions } from './actions'
 import { view } from './view'
 import styles from './styles.scss'
 
-createCustomElement('discover-leveled-list', {
+createCustomElement('x-772283-discover-leveled-list', {
   actionHandlers: actions,
   initialState: {
     selected: {},
